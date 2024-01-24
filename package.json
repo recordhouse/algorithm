@@ -1,7 +1,7 @@
 {
   "name": "algorithm",
   "version": "1.0.0",
-  "description": "안녕하세요~!\r 새로운 스터디원이 오셨습니다.\r 현업(모바일)이시며, 코틀린이 주 언어라고 하십니다. :)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
