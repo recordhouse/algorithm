@@ -1,18 +1,44 @@
+# 코딩 테스트 readline 사용법
+
+```js
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.on('line', function (line) {
+
+  // 입력 받은 값을 처리하는 코드
+  // close가 없으면 무한하게 입력 받으니 주의
+  rl. close();
+
+}).on('close',function(){
+
+  // 입력이 끝나고 실행하는 코드
+  process.exit();
+});
+```
+
+# 1. 문자열 출력하기
+* 문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.
 
 
+```js
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-안녕하세요~!
-새로운 스터디원이 오셨습니다.
-현업(모바일)이시며, 코틀린이 주 언어라고 하십니다. :)
+let input = [];
 
-차주 월요일(1월 29일) 19:00에 강남역 스터디룸에서 뵙는걸로 할게요~!
-차주에는 프로그래머스 기초 강의의 day1, day2 문제(10문제) 같이 풀어볼 계획에 있습니다.
+rl.on('line', function (line) {
+    input = [line];
+}).on('close',function(){
+    str = input[0];
 
-스터디룸은 정해지면 이 방에 다시 공유드릴게요~!
-모두들 따뜻한 저녁 보내세요..! :)
-
-
-
-
-
-
+    // 그냥 콘솔로 찍어봄, 통과
+    console.log(str);
+});
+```
