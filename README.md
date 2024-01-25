@@ -1,4 +1,4 @@
-# 코딩 테스트 readline 사용법
+#### 코딩 테스트 readline 사용법
 
 ```js
 const readline = require('readline');
@@ -20,7 +20,7 @@ rl.on('line', function (line) {
 });
 ```
 
-# 1. 문자열 출력하기
+#### 1. 문자열 출력하기
 * 문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.
 
 
